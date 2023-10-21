@@ -21,9 +21,9 @@ def predict():
     if prediction == 1:
         output = 'Diabetes predicted for given values!'
     else:
-        output = 'No diabetes predicted for given values. :)'
+        output = 'No diabetes predicted for given values :)'
 
     return render_template('index.html', prediction_text= output)
 
 if __name__ == "__main__":
-    app.run("0.0.0.0", port=5000)
+    app.run("0.0.0.0", port=5000, debug=True)
